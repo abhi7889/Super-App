@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Roboto:wght@900&family=Single+Day&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.register-page {
+  display: flex;
+  justify-content: flex-start;
+}
+.image-left {
+  display: flex;
+  align-items: flex-end;
+  width: 50vw;
+  background-image: url("../assets/image\ 13.png");
+  background-size: 100%;
+  background-position: center top; /* Center the image horizontally and crop from the top */
+  height: 100vh;
+}
+
+h1 {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 121.688%; /* 77.928px */
+  letter-spacing: 1px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.form-right {
+  width: 50%;
+  height: 100vh;
+  background-color: black;
+}
