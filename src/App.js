@@ -1,10 +1,24 @@
 import React from "react";
-import Register from "./components/Register";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Register from "./components/register/Register";
+import Genre from "./components/Genre/Genre";
+import HomePage from "./components/Homepage/HomePage";
 
-export default function app() {
+export default function App() {
+  const signUp = (userData) => {
+    console.log("Signing up:", userData);
+    localStorage.setItem("userData", JSON.stringify(userData));
+  };
+
   return (
     <div>
-      <Register />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Register signUp={signUp} />} />
+          <Route path="Genre" element={<Genre />} />
+          <Route path="HomePage" element={<HomePage />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
