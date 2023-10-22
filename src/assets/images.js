@@ -8,6 +8,8 @@ import image8 from "./image 9.svg";
 import image9 from "./image 10.svg";
 import image10 from "./image 11.svg";
 import vector from "./Vector.svg";
+import profileImg from "./image 15.svg";
+import icon from "./image 14.svg";
 
 
 const images = {
@@ -20,7 +22,9 @@ const images = {
     image8,
     image9,
     image10,
-    vector
+    vector,
+    profileImg ,
+    icon
 
 }
 export default images;

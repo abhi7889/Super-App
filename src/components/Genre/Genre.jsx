@@ -110,11 +110,11 @@ export default function Genre({ history }) {
   function handleClick(event) {
     if (selectedGenres.length < 3) {
       setError("Minimum 3 category required.");
-    }else{
+    } else {
       localStorage.setItem("selectedGenres", JSON.stringify(selectedGenres));
-    navigate('/HomePage');
-  }}
-
+      navigate("/HomePage");
+    }
+  }
 
   const genreCards = data.map((item) => (
     <GenreCard

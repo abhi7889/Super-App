@@ -1,0 +1,41 @@
+.movies--container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.movies--header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.movies--icon
+{
+    width: 81px;
+height: 81px;
+flex-shrink: 0;
+}
+
+.header--app--name
+{
+    color: #72DB73;
+    font-family: Single Day;
+    font-size: 47.333px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 139.688%; /* 66.119px */
+}
+
+.header--text
+{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 30.424px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 139.688%; /* 42.499px */
+    letter-spacing: 0.608px;
+}

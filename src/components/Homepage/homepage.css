@@ -1,0 +1,232 @@
+.main-container {
+  padding: 20px;
+  display: flex;
+}
+
+.user-info {
+  width: 490px;
+  height: 250px;
+
+  padding: 10px 10px 10px 10px;
+  flex-shrink: 0;
+  border-radius: 33.428px;
+  background: #5746ea;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+
+
+.login-info {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.profile-img {
+  margin-top: 10px;
+  width: 109px;
+  height: 227px;
+  flex-shrink: 0;
+}
+
+
+.name {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 103.188%; /* 38.124px */
+  letter-spacing:1px;
+  text-transform: uppercase;
+}
+
+.email {
+  color: #fff;
+  font-family: Roboto;
+  margin-top: 10px;
+  font-size: 15.947px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 103.188%; /* 38.124px */
+  letter-spacing: 1px;
+}
+
+.username
+{
+    color: #FFF;
+    margin-top: 10px;
+    font-family: Roboto;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 66.188%; /* 27.137px */
+    letter-spacing: 1px;
+}
+
+.selected-genre--hp {
+  width: 127.515px;
+  height: 41.578px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 36.947px;
+  background: #9f94ff;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 105.688%; /* 16.91px */
+  letter-spacing: 0.92px;
+}
+
+.selected--box--hp {
+  width: 352px;
+  max-height: 154px;
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 0fr);
+  gap: 10px;
+  align-content: center;
+  align-items: center;
+  margin-left: 20px;
+  padding-top: 30px;
+  overflow: auto;
+}
+
+.selected--box--hp::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+.selected--box--hp::-webkit-scrollbar-track {
+  background: transparent;        /* color of the tracking area */
+}
+
+.selected--box--hp::-webkit-scrollbar-thumb {
+  background-color: blue;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #5746EA;  
+}
+ .date-time
+ {
+    width: 490px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin-top: 20px;
+    border-radius: 19px 19px 0px 0px;
+    background: #FF4ADE;
+    padding: 10px 10px 10px 10px;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 141.688%; /* 46.757px */
+    letter-spacing: 0.66px;
+ }
+
+ .weather-data
+ {
+    width: 490px;
+    height: 97px;
+    padding: 10px 10px 10px 10px;
+    flex-shrink: 0;
+    border-radius:0px 0px 19px 19px ;
+    background: #101744;
+ }
+ .notes-div
+ {
+width: 360px;
+margin-left: 20px;
+max-height: 450px;
+border-radius: 19px;
+background: #F1C75B;
+
+ }
+
+
+ textarea::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+textarea::-webkit-scrollbar-track {
+  background: orange;        /* color of the tracking area */
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: orangered;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid orange;  /* creates padding around scroll thumb */
+}
+
+.text-area
+{
+  width: 315px;
+  height: 340px;
+  flex-shrink: 0;
+  border-radius: 19px;
+  background: #F1C75B;
+  padding: 20px;
+  border-style: none;
+  border-top-style: none;
+}
+textarea:focus {
+  outline: none;
+}
+.heading
+{
+  color: #000;
+  font-family: Roboto;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 105.688%; /* 40.161px */
+  letter-spacing: 0.76px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+ .news
+ {
+  
+  width: 450px;
+  height: 600px;
+  flex-shrink: 0;
+  margin-left: 20px;
+  background-color: #fff;
+  border-radius: 19px ;
+ }
+
+ .timer
+ {
+  width: 890px;
+  position: absolute;
+  height: 133px;
+  flex-shrink: 0;
+  margin-top: 20px;
+  border-radius: 19px;
+  background: #1E2343;
+ }
+ .browse
+ {
+  width: 179px;
+  margin-top: 20px;
+  float: right;
+  height: 50.12px;
+  flex-shrink: 0;
+  border-radius: 34.777px;
+  color: #FFF;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 23.526px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 92.2%; /* 21.691px */
+  letter-spacing: 0.471px;
+  background: #148A08;
+  border-style: none;
+ }
