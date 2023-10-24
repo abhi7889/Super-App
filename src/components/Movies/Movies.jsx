@@ -4,12 +4,10 @@ import { useNavigate } from "react-router-dom";
 import "./movies.css";
 
 export default function Movies() {
-
   const navigate = useNavigate();
 
   function handleClick() {
-
-      navigate('/HomePage');
+    navigate("/HomePage");
   }
 
   const genres = JSON.parse(localStorage.getItem("selectedGenres"));
@@ -21,11 +19,16 @@ export default function Movies() {
           <h2 className="header--app--name">Super app</h2>
           <p className="header--text">Entertainment according to your choice</p>
         </div>
-        <img className="movies--icon" src={images.icon} alt="icon" onClick={handleClick} />
+        <img
+          className="movies--icon"
+          src={images.icon}
+          alt="icon"
+          onClick={handleClick}
+        />
       </div>
 
-      <div >
-      {genres.map((movie) => (
+      <div>
+        {genres.map((movie) => (
           <MoviesCard genre={movie} />
         ))}
       </div>

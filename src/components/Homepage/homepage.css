@@ -194,17 +194,14 @@ textarea:focus {
   justify-content: space-evenly;
 }
 
-
-.start--circle{
-
-  background: #ff6A6A;
+.start--circle {
+  background: #ff6a6a;
   border-radius: 12px;
   padding: 6px;
   color: white;
   text-align: center;
   width: 320px;
   margin-left: 90px;
-
 }
 
 .browse {
@@ -224,6 +221,7 @@ textarea:focus {
   letter-spacing: 0.471px;
   background: #148a08;
   border-style: none;
+  cursor: pointer;
 }
 
 .news {

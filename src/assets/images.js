@@ -17,26 +17,24 @@ import up from "./up.svg";
 import down from "./down.svg";
 import tune from "./tune.mp3";
 
-
 const images = {
-    image1,
-    image2,
-    image3,
-    image4,
-    image6,
-    image7,
-    image8,
-    image9,
-    image10,
-    vector,
-    profileImg ,
-    icon,
-    pressure,
-    wind,
-    humidity,
-    up,
-    down,
-    tune
-
-}
+  image1,
+  image2,
+  image3,
+  image4,
+  image6,
+  image7,
+  image8,
+  image9,
+  image10,
+  vector,
+  profileImg,
+  icon,
+  pressure,
+  wind,
+  humidity,
+  up,
+  down,
+  tune,
+};
 export default images;

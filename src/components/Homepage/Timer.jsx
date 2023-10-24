@@ -53,12 +53,10 @@ const Timer = () => {
     return `${hours}:${minutes}:${seconds}`;
   }
 
-
-function onComplete() {
-  const audio = new Audio(images.tune);
-  audio.play();
+  function onComplete() {
+    const audio = new Audio(images.tune);
+    audio.play();
   }
-
 
   return (
     <div className="timer">

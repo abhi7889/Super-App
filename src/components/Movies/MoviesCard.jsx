@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-export default function MoviesCard({genre}) {
+export default function MoviesCard({ genre }) {
   const [movies, setMovies] = useState([]);
   console.log(movies);
   useEffect(() => {
@@ -13,7 +13,7 @@ export default function MoviesCard({genre}) {
     };
     const fetchMovies = async () => {
       await fetch(
-        `https://moviesdatabase.p.rapidapi.com/titles?genre=${genre}&year=2020`,
+        `https://moviesdatabase.p.rapidapi.com/titles?genre=${genre}&year=2022`,
         options
       )
         .then((response) => response.json())
@@ -25,15 +25,13 @@ export default function MoviesCard({genre}) {
 
   return (
     <>
-      <p className="genre--names" >
-        {genre}
-      </p>
-      <div className="poster-image" >
+      <p className="genre--names">{genre}</p>
+      <div className="poster-image">
         {movies.map((movie, idx) => {
           return (
-            <div className="movies--card" key={idx} >
+            <div className="movies--card" key={idx}>
               <img
-                src={movie?.primaryImage?.url} 
+                src={movie?.primaryImage?.url}
                 alt="movie-poster"
                 className="poster--card"
               />
@@ -43,4 +41,4 @@ export default function MoviesCard({genre}) {
       </div>
     </>
   );
-};
+}

@@ -157,8 +157,7 @@ export default function Genre({ history }) {
         ) : null}
       </div>
       <div className="right-genre-list">
-        <div className="selection-box">{genreCards}
-        </div>
+        <div className="selection-box">{genreCards}</div>
 
         <button className="next--button" onClick={handleClick}>
           Next

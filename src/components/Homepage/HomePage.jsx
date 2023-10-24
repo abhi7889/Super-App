@@ -9,12 +9,10 @@ import Timer from "./Timer";
 import News from "./News";
 
 export default function HomePage() {
-
   const navigate = useNavigate();
 
   function handleClick() {
-
-      navigate('/Movies');
+    navigate("/Movies");
   }
 
   const userData = JSON.parse(localStorage.getItem("userData"));
@@ -27,33 +25,45 @@ export default function HomePage() {
           <div>
             <img className="profile-img" src={images.profileImg} alt="user" />
           </div>
-<div>
-          <div className="login-info">
-            <p className="name"> {userData.name}</p>
-            <p className="email">{userData.email}</p>
-            <p className="username">{userData.userName}</p>
-          </div>
+          <div>
+            <div className="login-info">
+              <p className="name"> {userData.name}</p>
+              <p className="email">{userData.email}</p>
+              <p className="username">{userData.userName}</p>
+            </div>
 
-          <div className="selected--box--hp">
-            {genre && genre.map((selectedGenre, index) => (
-              <div className="selected-genre--hp" key={index}>
-                {selectedGenre}
-              </div>
-            ))}
-          </div>
+            <div className="selected--box--hp">
+              {genre &&
+                genre.map((selectedGenre, index) => (
+                  <div className="selected-genre--hp" key={index}>
+                    {selectedGenre}
+                  </div>
+                ))}
+            </div>
           </div>
         </div>
-        <div ><DateTimeDisplay /></div>
-        <div >< Weather/> </div>
-        <div> <Timer/> </div>
+        <div>
+          <DateTimeDisplay />
+        </div>
+        <div>
+          <Weather />{" "}
+        </div>
+        <div>
+          {" "}
+          <Timer />{" "}
+        </div>
       </div>
-      <><Notes/></>
+      <>
+        <Notes />
+      </>
       <div>
-      <div ><News/></div>
-      <button className="browse" onClick={handleClick} >Browse</button>
+        <div>
+          <News />
+        </div>
+        <button className="browse" onClick={handleClick}>
+          Browse
+        </button>
       </div>
-      
     </div>
   );
 }
-

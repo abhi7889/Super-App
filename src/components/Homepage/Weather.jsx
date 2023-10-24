@@ -29,9 +29,9 @@ export default function Weather() {
       </div>
       <div class="vl"></div>
       <div style={{ display: "flex", alignContent: "center" }}>
-        <div >
+        <div>
           <img
-            style={{ width: "20px", height: "20px" ,paddingTop:"70px"}}
+            style={{ width: "20px", height: "20px", paddingTop: "70px" }}
             src={images.pressure}
             alt="pressure_icon"
           />
@@ -48,23 +48,31 @@ export default function Weather() {
       <div class="vl"></div>
 
       <div>
-        <div style={{ display: "flex" , alignContent:'center'}}>
-          <div style={{ marginTop: "15px", }}>
-          <img style={{ width: "20px", height: "20px",paddingRight:"10px" }} src={images.wind} alt="wind_icon" />
+        <div style={{ display: "flex", alignContent: "center" }}>
+          <div style={{ marginTop: "15px" }}>
+            <img
+              style={{ width: "20px", height: "20px", paddingRight: "10px" }}
+              src={images.wind}
+              alt="wind_icon"
+            />
           </div>
           <div>
-        <p>{weather.current?.wind_kph} km/h</p>
-        <p>Wind</p>
+            <p>{weather.current?.wind_kph} km/h</p>
+            <p>Wind</p>
+          </div>
         </div>
-        </div>
-        <div style={{ display: "flex" , alignContent:'center'}}>
-        <div style={{ marginTop: "25px", }}>
-          <img style={{ width: "20px", height: "20px",paddingRight:"10px" }} src={images.humidity} alt="humidity_icon" />
+        <div style={{ display: "flex", alignContent: "center" }}>
+          <div style={{ marginTop: "25px" }}>
+            <img
+              style={{ width: "20px", height: "20px", paddingRight: "10px" }}
+              src={images.humidity}
+              alt="humidity_icon"
+            />
           </div>
           <div>
-        <p style={{ marginTop: "15px" }}>{weather.current?.humidity}%</p>
-        <p>Humidity</p>
-        </div>
+            <p style={{ marginTop: "15px" }}>{weather.current?.humidity}%</p>
+            <p>Humidity</p>
+          </div>
         </div>
       </div>
     </div>
