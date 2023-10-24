@@ -6,6 +6,7 @@ import DateTimeDisplay from "./DateTime";
 import Weather from "./Weather";
 import Notes from "./Notes";
 import Timer from "./Timer";
+import News from "./News";
 
 export default function HomePage() {
 
@@ -48,8 +49,7 @@ export default function HomePage() {
       </div>
       <><Notes/></>
       <div>
-      <div className="news">
-      </div>
+      <div ><News/></div>
       <button className="browse" onClick={handleClick} >Browse</button>
       </div>
       

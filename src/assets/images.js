@@ -10,6 +10,12 @@ import image10 from "./image 11.svg";
 import vector from "./Vector.svg";
 import profileImg from "./image 15.svg";
 import icon from "./image 14.svg";
+import pressure from "./pressure.svg";
+import wind from "./wind.svg";
+import humidity from "./humidity.svg";
+import up from "./up.svg";
+import down from "./down.svg";
+import tune from "./tune.mp3";
 
 
 const images = {
@@ -24,7 +30,13 @@ const images = {
     image10,
     vector,
     profileImg ,
-    icon
+    icon,
+    pressure,
+    wind,
+    humidity,
+    up,
+    down,
+    tune
 
 }
 export default images;
