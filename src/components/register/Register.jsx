@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import "./Style.css";
 
 export default function Register({ signUp }) {
@@ -35,14 +35,14 @@ export default function Register({ signUp }) {
       setEmail("");
       setMobileNumber("");
       setError({});
-      navigate('/Genre');
+      navigate("/Genre");
     } else {
       setError(newError);
     }
   };
 
   return (
-    <div className="register-page" >
+    <div className="register-page">
       <div className="image-left">
         <h1>Discover new things on Superapp</h1>
       </div>
@@ -120,7 +120,7 @@ export default function Register({ signUp }) {
             </label>
           </div>
 
-          <button type="sign-up"  className="btn-signup">
+          <button type="sign-up" className="btn-signup">
             SIGN UP
           </button>
         </form>
